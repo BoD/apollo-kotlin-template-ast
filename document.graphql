@@ -1,0 +1,18 @@
+query People {
+    people {
+        id
+        name
+        ... Frag1
+    }
+}
+
+fragment Frag1 on Person {
+    name
+    data {
+        ...Frag2
+    }
+}
+
+fragment Frag2 on PersonData {
+    moreInfo
+}

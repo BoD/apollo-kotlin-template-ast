@@ -1,0 +1,14 @@
+type Query {
+    people: [Person!]!
+}
+
+type Person {
+    id: ID!
+    name: String!
+    age: Int!
+    data: PersonData!
+}
+
+type PersonData {
+    moreInfo: String!
+}
